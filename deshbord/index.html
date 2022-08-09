@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        <!-- Custom css -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+
+    <body>
+        <!-- Wrapper -->
+        <div class="d-flex flex-column h-100 ">
+            <!-- Start : Header -->
+            <header id="header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                        <!-- Brand Logo -->
+                        <label for="toggleSidebar" class="toggle-button cursor-pointer"><span
+                                class="icon text-primary icon fa-solid fa-bars"></span></label>
+                        <!-- Search Bar -->
+                        <div class="search-bar-wrapper">
+                            <label for="searchBar"><span class="icon fa-solid fa-magnifying-glass"></span></label>
+                            <input type="text" id="searchBar" name="search"
+                                placeholder="Search for transaction,item,etc">
+                            <button class="btn btn-primary">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Actions -->
+                    <div class="action-bar d-flex align-items-center">
+                        <a href="" class="notification">
+                            <span class="icon fa-solid fa-message"></span>
+                        </a>
+                        <a href="" class="notification">
+                            <span class="icon fa-solid fa-bell"></span>
+                        </a>
+                        <a class="dropdown d-flex align-items-center">
+                            <div class="profile-wrap">
+                                <img src="assets/images/profile-pic.jpg" alt="profile pic">
+                            </div>
+                            <span class="fa-solid fa-caret-down"></span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- End : Header -->
+            <!-- Wrapper -->
+            <div class="d-flex flex-grow-1 overflow-hidden position-relative">
+                <!-- Start : Aside -->
+                <input type="checkbox" id="toggleSidebar">
+                <aside class="sidebar ">
+                    <div class="d-flex flex-column justify-content-between h-100">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="" class="nav-link active">
+                                    <span class="icon fa-solid fa-table-columns"></span>
+                                    <span class="nav-text">Search</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <span class="fa fa-bell icon"></span>
+                                    <span class="nav-text">Alert</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <span class="fa fa-tag icon"></span>
+                                    <span class="nav-text">Tag</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <span class="fa fa-gear icon"></span>
+                                    <span class="nav-text">Setting</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <span class="fa fa-address-book icon"></span>
+                                    <span class="nav-text">Tips</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav-list mb-4">
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <span class="fa fa-trash icon"></span>
+                                    <span class="nav-text">Trash</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <span class="fa fa-sign-out icon"></span>
+                                    <span class="nav-text">logout</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- End : Aside -->
+                <!-- Start : Main Content -->
+                <main id="main" class="flex-grow-1 overflow-auto">
+                    <h2>Dashboard</h2>
+                    <div class="row">
+                        <!-- Card Wrapper -->
+                        <div class="card-wrapper">
+                            <!-- Card  -->
+                            <div class="card">
+                                <div class="icon-wrapper">
+                                    <span class="icon fa-solid fa-eye"></span>
+                                </div>
+                                <h4>Total views</h4>
+                                <h2>302.402</h2>
+                                <p><small>Start from 1 Jan 2021</small></p>
+                            </div>
+                        </div>
+                        <!-- Card Wrapper -->
+                        <div class="card-wrapper">
+                            <!-- Card  -->
+                            <div class="card">
+                                <div class="icon-wrapper">
+                                    <span class="icon fa-solid fa-eye"></span>
+                                </div>
+                                <h4>Total views</h4>
+                                <h2>302.402</h2>
+                                <p><small>Start from 1 Jan 2021</small></p>
+                            </div>
+                        </div>
+                        <!-- Card Wrapper -->
+                        <div class="card-wrapper">
+                            <!-- Card  -->
+                            <div class="card">
+                                <div class="icon-wrapper">
+                                    <span class="icon fa-solid fa-eye"></span>
+                                </div>
+                                <h4>Total views</h4>
+                                <h2>302.402</h2>
+                                <p><small>Start from 1 Jan 2021</small></p>
+                            </div>
+                        </div>
+                        <!-- Card Wrapper -->
+                        <div class="card-wrapper">
+                            <!-- Card  -->
+                            <div class="card">
+                                <div class="icon-wrapper">
+                                    <span class="icon fa-solid fa-eye"></span>
+                                </div>
+                                <h4>Total views</h4>
+                                <h2>302.402</h2>
+                                <p><small>Start from 1 Jan 2021</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="d-flex">
+                        <!-- Start : table -->
+                        <div class="table-wrapper">
+                            <table class="justify-content-between  w-100">
+
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Product Name</th>
+                                    <th>Status</th>
+                                    <th>Sold</th>
+                                    <th>View</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="d-flex">
+                                        <div class="table-image"><img src="./assets/images/download.png" alt=""></div>
+                                        <p>Lorem ipsum dolor sit</p>
+                                    </td>
+                                    <td>active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="d-flex">
+                                        <div class="table-image"><img src="./assets/images/download.png" alt=""></div>
+                                        <p>Lorem ipsum dolor sit</p>
+                                    </td>
+                                    <td>active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="d-flex">
+                                        <div class="table-image">
+                                            <img src="./assets/images/download.png" alt="">
+                                        </div>
+                                        <p>Lorem ipsum dolor sit</p>
+                                    </td>
+                                    <td>active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="d-flex">
+                                        <div class="table-image"><img src="./assets/images/download.png" alt=""></div>
+                                        <div>
+                                            <p>Lorem ipsum dolor sit</p>
+                                        </div>
+                                    </td>
+                                    <td>active</td>
+                                    <td>10</td>
+                                    <td>320</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- End : table -->
+                        <!-- start : graph -->
+                        <div class="img-wrapper">
+                            <div>
+                                <img src="./assets/images/download.png" alt="">
+                            </div>
+                        </div>
+                        <!-- end : graph -->
+                    </section>
+                </main>
+                <!-- End : Main Content -->
+            </div>
+        </div>
+    </body>
+
+    </html>
+</body>
+
+</html>
