@@ -1,0 +1,32 @@
+[
+    {
+        "item": "Skippy Peanut butter 160z",
+        "date": "07 Nov, 8:35pm",
+        "type": "Discarded",
+        "estCost": 40,
+        "last": "18 Aug",
+        "list": "Grocery",
+        "auto": "no",
+        "buyNow": "N/A"
+    },
+    {
+        "item": "Skippy Peanut butter 160z",
+        "date": "07 Nov, 8:35pm",
+        "type": "Discart",
+        "estCost": 40,
+        "last": "18 Aug",
+        "list": "Grocery",
+        "auto": "no",
+        "buyNow": "N/A"
+    },
+    {
+        "item": "Skippy Peanut butter 160z",
+        "date": "07 Nov, 8:35pm",
+        "type": "Discarded",
+        "estCost": 50,
+        "last": "18 Aug",
+        "list": "Grocery",
+        "auto": "no",
+        "buyNow": "N/A"
+    }
+]

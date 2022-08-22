@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="assest/css/styles.css">
+
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div class="d-flex flex-column h-100 ">
+        <!-- Start : Header -->
+        <header id="header">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <!-- Brand Logo -->
+                    <label for="toggleSidebar" class="cursor-pointer"><span
+                            class="icon text-primary">tallyscam</span></label>
+                </div>
+                <!-- Actions bar-->
+                <div class="action-bar d-flex align-items-center">
+
+                    <a href="" class="notification">
+                        <span class="icon fa-solid fa-bell"></span>
+                    </a>
+                    <a class="dropdown d-flex align-items-center">
+                        <div class="profile-wrap">
+                            <img src="assest/images/istockphoto-1180542165-612x612.jpg" alt="profile pic">
+                        </div>
+                        <span>JOhn Smit</span>
+                        <div> <span class="fa-solid fa-caret-down"></span></div>
+
+                    </a>
+
+                </div>
+            </div>
+        </header>
+        <!-- End : Header -->
+        <!-- Wrapper -->
+        <div class="d-flex flex-grow-1 overflow-hidden position-relative">
+            <!-- Start : Aside -->
+            <input type="checkbox" id="toggleSidebar">
+            <aside class="sidebar ">
+                <div class="d-flex flex-column justify-content-between">
+
+                    <ul class="nav-list">
+                        <li class="align-items-center  list-text">
+                            <span>GENERAL</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link active">
+                                <span class="fa-solid fa-magnifying-glass"> </span>
+                                <span class="nav-text">Search</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa-regular fa-bell"></span>
+                                <span class="nav-text">Alert</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-tag icon"></span>
+                                <span class="nav-text">Tag</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <ul class="nav-list mb-4">
+                        <li class=" list-text">
+                            <span>OTHERS</span>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-gear icon"></span>
+                                <span class="nav-text">Setting</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-address-book icon"></span>
+                                <span class="nav-text">Tips</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-trash icon"></span>
+                                <span class="nav-text">Trash</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <span class="fa fa-sign-out icon"></span>
+                                <span class="nav-text">logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- End : Aside -->
+            <!-- Start : Main Content -->
+            <main class="flex-grow-1">
+
+                <!-- Action Bar -->
+                <div class="d-flex justify-content-between align-items-center btn">
+                    <input type="text" name="" id="search-bar" placeholder="search here" style="padding: 10px;">
+                    <button class="btn-primary btn-filter"> <span class="fa fa-filter" onclick="filterData()"></span>
+                        Filter</button>
+                </div>
+                <div class="flex-grow-1 ">
+
+                    <!-- Recent Activity -->
+                    <section>
+                        <h5>Recent Activity</h5>
+                        <section class="table-wrapper">
+                            <!-- Table Header -->
+                            <table class="table-data">
+                                <thead class="bg-white">
+                                    <tr>
+                                        <th class="item">Item <span class="fa fa-sort"></span></th>
+                                        <th class="date">Date <span class="fa fa-sort"></span></th>
+                                        <th class="type">Type</th>
+                                        <th class="est-cost">Est. Cost<span class="fa fa-sort"></span> </th>
+                                        <th class="last">Last<span class="fa fa-sort"></span> </th>
+                                        <th class="list">List<span class="fa fa-sort"></span> </th>
+                                        <th class="auto">Auto</th>
+                                        <th class="buy-now">Buy now</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody id="tableData">
+
+                                </tbody>
+                            </table>
+                        </section>
+                    </section>
+                </div>
+
+            </main>
+            <!-- End : main -->
+        </div>
+        <script src="assest/js/skys.js"></script>
+</body>
